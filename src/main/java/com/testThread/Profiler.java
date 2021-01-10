@@ -23,21 +23,8 @@ public class Profiler {
     }
 
     public static void main(String[] args) throws InterruptedException {
-
-        for (int i = 0; i < 5; i++) {
-            int finalI = i;
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Profiler.begin();
-                        Thread.sleep(1000 * finalI);
-                        System.out.println(Thread.currentThread().getName() + ": " + Profiler.end());
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
+        Profiler.begin();
+        Thread.sleep(1000);
+        System.out.println(Thread.currentThread().getName() + ": " + Profiler.end());
     }
 }
