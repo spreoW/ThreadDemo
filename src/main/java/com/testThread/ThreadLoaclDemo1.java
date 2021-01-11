@@ -12,6 +12,7 @@ public class ThreadLoaclDemo1 {
         content.set(v);
     }
 
+
     public String getContent(){
         return content.get();
     }
@@ -20,11 +21,13 @@ public class ThreadLoaclDemo1 {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    //content.set(Thread.currentThread().getName() +": 的数据。。");
-                    name = Thread.currentThread().getName() +": 的数据。。";
+                    content.set(Thread.currentThread().getName() +": 的数据。。");
+                    content.set(Thread.currentThread().getName() +":2 的数据。。");
+//                    name = Thread.currentThread().getName() +": 的数据。。";
                     System.out.println("=======================");
-                    //System.out.println(Thread.currentThread().getName() + ": " +content.get());
-                    System.out.println(Thread.currentThread().getName() + ": " +name);
+                    System.out.println(Thread.currentThread().getName() + ": " +content.get());
+//                    System.out.println(Thread.currentThread().getName() + ": " +name);
+
                 }
             }).start();
         }
