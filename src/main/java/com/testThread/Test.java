@@ -6,6 +6,6 @@ package com.testThread;
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println(0x61c88647);
+        System.out.println("dev commit");
     }
 }
