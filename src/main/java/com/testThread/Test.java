@@ -9,5 +9,7 @@ public class Test {
         System.out.println("hotfix commit");
         System.out.println("dev commit");
         System.out.println("dev commit and push!");
+
+        System.out.println("new a test branch");
     }
 }
