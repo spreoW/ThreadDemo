@@ -13,5 +13,6 @@ public class Test {
         System.out.println("new a test branch");
 
         System.out.println("dev commit");
+        System.out.println("tese commit");
     }
 }
