@@ -14,5 +14,7 @@ public class Test {
 
         System.out.println("dev commit");
         System.out.println("tese commit");
+
+        System.out.println("test commit");
     }
 }
