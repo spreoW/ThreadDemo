@@ -1,20 +1,19 @@
 package com.testThread;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author w
  * @date 2021/1/11
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println("hotfix commit");
-        System.out.println("dev commit");
-        System.out.println("dev commit and push!");
-
-        System.out.println("new a test branch");
-
-        System.out.println("dev commit");
-        System.out.println("tese commit");
-
-        System.out.println("test commit");
+      List<Integer> list= new ArrayList<>();
+      addList(list,1,2,3,4,5);
+      list.forEach(item -> System.out.println("item="+item));
+    }
+    public static void addList(List<Integer> list,Integer... a){
     }
 }
