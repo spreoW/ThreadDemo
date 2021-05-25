@@ -13,6 +13,7 @@ public class Test {
       List<Integer> list= new ArrayList<>();
       addList(list,1,2,3,4,5);
       list.forEach(item -> System.out.println("item="+item));
+      System.out.println("aa");
     }
     public static void addList(List<Integer> list,Integer... a){
     }
